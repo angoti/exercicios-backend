@@ -1,0 +1,546 @@
+[
+  {
+    "id": 1,
+    "videoAulaID": [
+      1
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual propriedade CSS Flexbox define a direção principal do layout dos itens filhos dentro de um container?",
+    "imagem": "",
+    "tipo": "múltipla escolha",
+    "nivel_dificuldade": "facil",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "flex-direction",
+        "correta": true
+      },
+      {
+        "id": "b",
+        "texto": "justify-content",
+        "correta": false
+      },
+      {
+        "id": "c",
+        "texto": "align-items",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "flex-wrap",
+        "correta": false
+      },
+      {
+        "id": "e",
+        "texto": "flex-grow",
+        "correta": false
+      }
+    ],
+    "explicacao": "A propriedade `flex-direction` controla a direção principal do layout, podendo ser 'row', 'column', etc.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! Você acertou!",
+        "erro": "A resposta correta é 'flex-direction'. Essa propriedade define a direção principal do layout dos itens filhos."
+      }
+    }
+  },
+  {
+    "id": 2,
+    "videoAulaID": [
+      2,
+      3
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Como você centralizaria horizontalmente um item filho dentro de um container usando Flexbox?",
+    "imagem": "",
+    "tipo": "múltipla escolha",
+    "nivel_dificuldade": "medio",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Definindo `justify-content: center` no container",
+        "correta": true
+      },
+      {
+        "id": "b",
+        "texto": "Definindo `align-items: center` no container",
+        "correta": false
+      },
+      {
+        "id": "c",
+        "texto": "Definindo `flex-direction: column` no container",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "Definindo `flex-wrap: wrap` no container",
+        "correta": false
+      },
+      {
+        "id": "e",
+        "texto": "Definindo `margin: auto` no item filho",
+        "correta": false
+      }
+    ],
+    "explicacao": "Para centralizar horizontalmente um item filho, utilizamos a propriedade `justify-content: center` no container pai.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Ótimo! Você acertou!",
+        "erro": "Para centralizar horizontalmente, use `justify-content: center`. `align-items: center` centraliza verticalmente."
+      }
+    }
+  },
+  {
+    "id": 3,
+    "videoAulaID": [
+      4,
+      5
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual a diferença entre `flex-grow` e `flex-shrink`? Em qual cenário você usaria cada um?",
+    "imagem": "",
+    "tipo": "múltipla escolha",
+    "nivel_dificuldade": "medio",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "`flex-grow` define a ordem dos itens, enquanto `flex-shrink` define o tamanho mínimo.",
+        "correta": false
+      },
+      {
+        "id": "b",
+        "texto": "`flex-grow` define o quanto um item pode crescer, enquanto `flex-shrink` define o quanto um item pode encolher.",
+        "correta": true
+      },
+      {
+        "id": "c",
+        "texto": "Ambos controlam a ordem dos itens dentro do container.",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "`flex-grow` define o espaço mínimo que um item deve ocupar, enquanto `flex-shrink` define o espaço máximo.",
+        "correta": false
+      },
+      {
+        "id": "e",
+        "texto": "Essas propriedades não possuem relação com o layout Flexbox.",
+        "correta": false
+      }
+    ],
+    "explicacao": "A propriedade `flex-grow` determina quanto um item pode crescer em relação aos outros, enquanto `flex-shrink` determina quanto um item pode encolher. O valor padrão para ambas é 1, o que significa que todos os itens crescerão ou encolherão proporcionalmente.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Excelente! Você compreendeu a diferença entre `flex-grow` e `flex-shrink`.",
+        "erro": "`flex-grow` e `flex-shrink` controlam como os itens se comportam quando há espaço livre ou insuficiente no container. A propriedade correta para definir a ordem dos itens é `order`."
+      }
+    }
+  },
+  {
+    "id": 4,
+    "videoAulaID": [
+      6
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Como você criaria um layout responsivo de três colunas com alturas iguais usando Flexbox?",
+    "imagem": "",
+    "tipo": "múltipla escolha",
+    "nivel_dificuldade": "medio",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Definindo `display: flex`, `flex-direction: column` e `flex-wrap: wrap` no container.",
+        "correta": false
+      },
+      {
+        "id": "b",
+        "texto": "Definindo `display: flex`, `flex-direction: row`, `flex-wrap: nowrap` e `flex-basis: 33.33%` nos itens.",
+        "correta": true
+      },
+      {
+        "id": "c",
+        "texto": "Utilizando `grid` ao invés de Flexbox.",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "Definindo `display: inline-block` nos itens e ajustando as larguras com `width`.",
+        "correta": false
+      },
+      {
+        "id": "e",
+        "texto": "Utilizando `float` para posicionar os elementos.",
+        "correta": false
+      }
+    ],
+    "explicacao": "Para criar um layout de três colunas com alturas iguais, você precisa combinar as propriedades `flex-direction`, `flex-wrap` e `flex-basis`. A propriedade `flex-direction: row` define a direção principal como horizontal, `flex-wrap: nowrap` evita que os itens quebrem para a próxima linha, e `flex-basis: 33.33%` define a largura inicial de cada item como um terço do container.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! Você acertou! A combinação dessas propriedades garante que os itens tenham a mesma altura e ocupem um terço da largura do container.",
+        "erro": "Lembre-se que para criar colunas com alturas iguais, é necessário definir a direção principal como `row` e garantir que os itens não quebrem para a próxima linha. A propriedade `flex-basis` define a largura inicial de cada item."
+      }
+    }
+  },
+  {
+    "id": 5,
+    "videoAulaID": [
+      7
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual a propriedade CSS Flexbox permite que você defina a ordem dos itens filhos dentro de um container?",
+    "imagem": "",
+    "tipo": "múltipla escolha",
+    "nivel_dificuldade": "facil",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "order",
+        "correta": true
+      },
+      {
+        "id": "b",
+        "texto": "flex-direction",
+        "correta": false
+      },
+      {
+        "id": "c",
+        "texto": "justify-content",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "align-items",
+        "correta": false
+      },
+      {
+        "id": "e",
+        "texto": "flex-wrap",
+        "correta": false
+      }
+    ],
+    "explicacao": "A propriedade `order` permite controlar a ordem dos elementos dentro do container, independentemente de sua ordem no HTML. Um valor numérico menor indica uma posição mais inicial.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! A propriedade `order` é a responsável por definir a ordem dos elementos dentro de um container Flexbox.",
+        "erro": "A propriedade correta é `order`. Ela permite que você reorganize os itens sem alterar a ordem do HTML."
+      }
+    }
+  },
+  {
+    "id": 6,
+    "videoAulaID": [
+      8,
+      9
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Como você criaria um layout responsivo usando Flexbox, onde os itens filhos mudam de linha quando a tela fica menor?",
+    "imagem": "",
+    "tipo": "múltipla escolha",
+    "nivel_dificuldade": "medio",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Utilizando a propriedade `flex-wrap: wrap`.",
+        "correta": true
+      },
+      {
+        "id": "b",
+        "texto": "Utilizando a propriedade `display: inline-block`.",
+        "correta": false
+      },
+      {
+        "id": "c",
+        "texto": "Utilizando a propriedade `float: left`.",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "Ajustando manualmente o layout com media queries.",
+        "correta": false
+      },
+      {
+        "id": "e",
+        "texto": "Utilizando a propriedade `flex-direction: column`.",
+        "correta": false
+      }
+    ],
+    "explicacao": "A propriedade `flex-wrap: wrap` permite que os itens flexíveis quebrem para uma nova linha quando o espaço disponível no container se torna insuficiente, criando um layout responsivo.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! A propriedade `flex-wrap: wrap` é a chave para criar layouts responsivos com Flexbox. Ela permite que os itens se adaptem a diferentes tamanhos de tela.",
+        "erro": "A propriedade `flex-wrap: wrap` é a mais adequada para criar layouts responsivos com Flexbox. As outras opções podem ser utilizadas em alguns casos, mas não são tão flexíveis e eficientes quanto `flex-wrap`."
+      }
+    }
+  },
+  {
+    "id": 7,
+    "videoAulaID": [
+      10
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual a diferença entre `align-items` e `align-self`?",
+    "imagem": "",
+    "tipo": "múltipla escolha",
+    "nivel_dificuldade": "medio",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Ambas alinham os itens no eixo principal.",
+        "correta": false
+      },
+      {
+        "id": "b",
+        "texto": "`align-items` alinha todos os itens, enquanto `align-self` alinha um item individualmente.",
+        "correta": true
+      },
+      {
+        "id": "c",
+        "texto": "`align-items` alinha um item individualmente, enquanto `align-self` alinha todos os itens.",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "Ambas definem a direção do layout Flexbox.",
+        "correta": false
+      },
+      {
+        "id": "e",
+        "texto": "Não há diferença entre as duas propriedades.",
+        "correta": false
+      }
+    ],
+    "explicacao": "`align-items` define o alinhamento de todos os itens flexíveis dentro do container em relação ao eixo cruzado. `align-self` permite sobrepor o alinhamento de um item individual, permitindo que você alinhe cada item de forma diferente.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! Você entendeu a diferença entre `align-items` e `align-self`. `align-items` define o alinhamento padrão, enquanto `align-self` permite personalizar o alinhamento de cada item.",
+        "erro": "Lembre-se que `align-items` define o alinhamento para todos os itens, enquanto `align-self` permite personalizar o alinhamento de cada item individualmente. Tente revisar os conceitos de Flexbox."
+      }
+    }
+  },
+  {
+    "id": 8,
+    "videoAulaID": [
+      11,
+      12
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual a melhor abordagem para criar um card deslizante horizontalmente usando Flexbox e animações CSS?",
+    "imagem": "",
+    "tipo": "multipla_escolha",
+    "nivel_dificuldade": "dificil",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Utilizar `position: absolute` e `left` para posicionar os cards e JavaScript para controlar a animação.",
+        "correta": false
+      },
+      {
+        "id": "b",
+        "texto": "Utilizar `float` para posicionar os cards e jQuery para criar a animação.",
+        "correta": false
+      },
+      {
+        "id": "c",
+        "texto": "Utilizar `transform: translateX()` para criar a animação e `transition` para tornar a transição suave.",
+        "correta": true
+      },
+      {
+        "id": "d",
+        "texto": "Utilizar CSS Grid para criar o layout e JavaScript para controlar a animação.",
+        "correta": false
+      }
+    ],
+    "explicacao": "A opção c é a mais eficiente e recomendada para criar um card deslizante suave e responsivo. `transform: translateX()` é ideal para animações de translação, e `transition` permite criar transições suaves entre os diferentes estados do elemento.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! Você escolheu a melhor abordagem para criar um card deslizante responsivo e eficiente. `transform: translateX()` e `transition` são as ferramentas ideais para este tipo de animação.",
+        "erro": "Lembre-se que `transform: translateX()` é a maneira mais eficiente de criar animações de translação. Evite utilizar `position: absolute` e `float`, pois podem causar problemas de layout e desempenho."
+      }
+    }
+  },
+  {
+    "id": 9,
+    "videoAulaID": [
+      13
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual a melhor abordagem para criar um menu responsivo que se colapsa em um menu hambúrguer em telas menores usando Flexbox?",
+    "imagem": "",
+    "tipo": "multipla_escolha",
+    "nivel_dificuldade": "dificil",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Utilizar `float` para posicionar os itens do menu e JavaScript para controlar a animação.",
+        "correta": false
+      },
+      {
+        "id": "b",
+        "texto": "Utilizar Flexbox para organizar os itens e media queries para ajustar o layout, com um botão hambúrguer que, ao ser clicado, oculta os itens do menu.",
+        "correta": true
+      },
+      {
+        "id": "c",
+        "texto": "Utilizar tabelas para estruturar o menu e CSS para ajustar o layout para diferentes tamanhos de tela.",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "Utilizar `position: absolute` para posicionar os itens do menu e JavaScript para criar um efeito de slide.",
+        "correta": false
+      }
+    ],
+    "explicacao": "A opção b é a mais adequada. Flexbox oferece um controle preciso sobre o layout, enquanto media queries permitem ajustar o layout para diferentes tamanhos de tela. O botão hambúrguer é um padrão comum para menus responsivos.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! Você escolheu a melhor abordagem. Flexbox e media queries são as ferramentas ideais para criar menus responsivos.",
+        "erro": "Lembre-se que Flexbox é a ferramenta mais adequada para criar layouts flexíveis e responsivos. Evite utilizar `float` e tabelas para estruturar menus, pois podem gerar problemas de manutenção e compatibilidade."
+      }
+    }
+  },
+  {
+    "id": 10,
+    "videoAulaID": [
+      14,
+      15
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual a causa mais provável de elementos filhos se sobreporem em um layout Flexbox?",
+    "imagem": "",
+    "tipo": "multipla_escolha",
+    "nivel_dificuldade": "dificil",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Conflitos entre as propriedades `flex-grow` e `flex-shrink`.",
+        "correta": true
+      },
+      {
+        "id": "b",
+        "texto": "Uso incorreto da propriedade `display: inline-block` dentro de um container Flexbox.",
+        "correta": true
+      },
+      {
+        "id": "c",
+        "texto": "Margens e padding não sendo considerados no cálculo do layout Flexbox.",
+        "correta": true
+      },
+      {
+        "id": "c",
+        "texto": "Todos os itens acima podem causar sobreposição.",
+        "correta": true
+      }
+    ],
+    "explicacao": "A sobreposição de elementos em um layout Flexbox pode ser causada por diversos fatores, incluindo conflitos entre as propriedades de Flexbox, margens e padding, e o uso incorreto de outras propriedades CSS. É importante analisar cuidadosamente o código para identificar a causa específica do problema.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! Você identificou corretamente que a sobreposição de elementos em um layout Flexbox pode ter múltiplas causas. É importante analisar o contexto específico para encontrar a solução.",
+        "erro": "Lembre-se que a sobreposição de elementos pode ser causada por diversos fatores, incluindo conflitos entre as propriedades de Flexbox, margens e padding, e o uso incorreto de outras propriedades CSS. Utilize as ferramentas do desenvolvedor do navegador para inspecionar os elementos e identificar a causa específica do problema."
+      }
+    }
+  },
+  {
+    "id": 11,
+    "videoAulaID": [
+      16
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual das seguintes técnicas é mais eficaz para otimizar o desempenho de um layout criado com Flexbox?",
+    "imagem": "",
+    "tipo": "multipla_escolha",
+    "nivel_dificuldade": "dificil",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Utilizar `float` ao invés de Flexbox para posicionar os elementos.",
+        "correta": false
+      },
+      {
+        "id": "b",
+        "texto": "Minimizar o uso de propriedades CSS que causam reflows e repaints, como `margin`, `padding` e `width`.",
+        "correta": false
+      },
+      {
+        "id": "c",
+        "texto": "Utilizar `will-change` para informar ao navegador quais propriedades serão animadas, permitindo otimizações.",
+        "correta": true
+      },
+      {
+        "id": "d",
+        "texto": "Adicionar mais elementos ao DOM para melhorar a estrutura do layout.",
+        "correta": false
+      }
+    ],
+    "explicacao": "A opção c é a mais correta. Ao utilizar `will-change`, você informa ao navegador quais propriedades serão animadas ou modificadas, permitindo que ele otimize a renderização e evite reflows e repaints desnecessários.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! `will-change` é uma ferramenta poderosa para otimizar o desempenho de animações e transições CSS.",
+        "erro": "Evite utilizar `float` para criar layouts modernos. Minimizar o uso de propriedades que causam reflows e repaints é importante, mas `will-change` oferece uma otimização mais específica para animações."
+      }
+    }
+  },
+  {
+    "id": 12,
+    "videoAulaID": [
+      17
+    ],
+    "trancado": false,
+    "feito": false,
+    "acertou": false,
+    "pergunta": "Qual a melhor abordagem para criar um layout de grade com três colunas e um cabeçalho fixo usando Flexbox?",
+    "imagem": "",
+    "tipo": "multipla_escolha",
+    "nivel_dificuldade": "dificil",
+    "respostas": [
+      {
+        "id": "a",
+        "texto": "Utilizar `display: grid` para o layout geral e Flexbox para o cabeçalho.",
+        "correta": false
+      },
+      {
+        "id": "b",
+        "texto": "Utilizar Flexbox para o layout geral e `position: sticky` para o cabeçalho.",
+        "correta": true
+      },
+      {
+        "id": "c",
+        "texto": "Utilizar tabelas para criar o layout e CSS para posicionar o cabeçalho.",
+        "correta": false
+      },
+      {
+        "id": "d",
+        "texto": "Utilizar `float` para posicionar as colunas e `position: fixed` para o cabeçalho.",
+        "correta": false
+      }
+    ],
+    "explicacao": "A opção b é a mais adequada. Flexbox oferece um controle preciso sobre o layout das colunas, e `position: sticky` permite que o cabeçalho seja fixado na parte superior da viewport enquanto rolamos.",
+    "feedback": {
+      "mensagens": {
+        "acerto": "Parabéns! A combinação de Flexbox e `position: sticky` é uma ótima maneira de criar layouts de grade com cabeçalhos fixos.",
+        "erro": "Evite utilizar tabelas para criar layouts, pois dificultam a manutenção e a responsividade. `position: fixed` pode causar problemas de layout em diferentes tamanhos de tela."
+      }
+    }
+  }
+]
